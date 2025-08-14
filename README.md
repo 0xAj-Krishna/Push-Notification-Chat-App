@@ -1,4 +1,4 @@
-![Next.js]()
+![Next.js](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8w1hhq2um83lqlc5f0pp.jpg)
 # Next.js FCM Chat App
 This project is a simple chat application built with Next.js, TypeScript, and Firebase Cloud Messaging (FCM) to handle push notifications. It demonstrates how to request notification permissions, get a unique FCM token for a device, and receive push notifications from the Firebase Console.
 
