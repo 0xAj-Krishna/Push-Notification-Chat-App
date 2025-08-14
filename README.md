@@ -1,96 +1,36 @@
-![Next.js]()
-# Next.js FCM Chat App
-This project is a simple chat application built with Next.js, TypeScript, and Firebase Cloud Messaging (FCM) to handle push notifications. It demonstrates how to request notification permissions, get a unique FCM token for a device, and receive push notifications from the Firebase Console.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-### ⚙️ Prerequisites
-Before you get started, make sure you have the following installed on your machine:
+## Getting Started
 
-- Node.js and npm (or Yarn/pnpm)
-
-- A Firebase project configured for web applications.
-
-### 🚀 Setup Instructions
-#### Clone the repository:
-
-```bash
-git clone [your_repository_url]
-cd [your_repository_name]
-```
-#### Install project dependencies:
-
-```bash
-npm install
-```
-
-#### Start the development server:
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
-The application will be available at http://localhost:3000.
 
-### 🔥 Firebase Setup Guide
-#### To enable push notifications, you need to link this project with your Firebase account.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-#### 1. Create a Firebase Project:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- Go to the Firebase Console.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- Click Add project and follow the on-screen instructions.
+## Learn More
 
-#### 2. Register a Web App:
+To learn more about Next.js, take a look at the following resources:
 
-- In your Firebase project, navigate to Project settings.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- Under the Your apps section, click the Web icon (</>) to add a new web app.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- Give your app a nickname and click Register app.
+## Deploy on Vercel
 
-- Copy the Firebase SDK configuration object.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-#### 3. Update Your Code with Firebase Config:
-
-- Open src/utils/firebase.ts and public/firebase-messaging-sw.js.
-
-- Paste the Firebase SDK configuration you copied into the firebaseConfig object in both files.
-
-#### 4. Get Your VAPID Key:
-
-- In the Firebase Console, go to Project settings > Cloud Messaging.
-
-- Under Web configuration, click on Generate key pair.
-
-- Copy the generated key.
-
-#### Update Your Code with the VAPID Key:
-
-- Open src/utils/firebase.ts.
-
-- Paste your VAPID key as the value for vapidKey.
-
-- #### Note: The VAPID key is a security credential. Keep it private and do not share it publicly.
-
-### ✅ How to Test Notifications
-#### 1. Get the FCM Token:
-
-- Run the application and open it in a modern browser (like Chrome or Firefox).
-
-- The app will prompt you for notification permissions. Allow them.
-
-- The FCM registration token will be displayed on the page. Copy this token.
-
-#### 2. Send a Test Message from the Firebase Console:
-
-- In your Firebase Console, navigate to Engage > Cloud Messaging.
-
-- Click the Send your first message button.
-
-- Enter a Notification title and Notification text.
-
-- On the right side, click Send test message.
-
-- In the pop-up, paste the FCM token you copied from your app into the Add an FCM registration token field.
-
-- Click Test.
-
-#### 3. The notification should appear in your browser, and the message will be logged to the in-app chat display.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
