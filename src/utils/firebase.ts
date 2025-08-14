@@ -3,13 +3,12 @@ import { getMessaging, getToken, onMessage } from 'firebase/messaging';
 
 // Your Firebase project configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyChM-mMXFCi3xWMOc6Q7q9rbnlSYUt6ApM",
-  authDomain: "project-chatbox-be70a.firebaseapp.com",
-  projectId: "project-chatbox-be70a",
-  storageBucket: "project-chatbox-be70a.firebasestorage.app",
-  messagingSenderId: "103965665517",
-  appId: "1:103965665517:web:475b1192e2cef86e9844e4",
-  measurementId: "G-4HCDPW8G9C"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  appId: "YOUR_MESSAGING_SENDER_ID",
+  messagingSenderId: "YOUR_APP_ID",
 };
 
 const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
@@ -28,7 +27,7 @@ export const getFCMToken = async () => {
       if (permission === 'granted') {
         const currentToken = await getToken(messaging, {
           // Replace this with your actual VAPID key
-          vapidKey: 'BPU7oRygsuK9FbNc9R9IvAt3ijb-6f5Cd_7H6taw4t4hJ3OtXvCVrhaZJ6DZVitM00mIK0mxp6G61T3dGOKgb1c',
+          vapidKey: 'YOUR_PUBLIC_VAPID_KEY',
         });
         if (currentToken) {
           console.log('FCM registration token:', currentToken);

@@ -5,13 +5,12 @@ importScripts('https://www.gstatic.com/firebasejs/9.1.0/firebase-messaging-compa
 
 const firebaseConfig = {
   // Replace these with your actual Firebase project settings
-  apiKey: "AIzaSyChM-mMXFCi3xWMOc6Q7q9rbnlSYUt6ApM",
-  authDomain: "project-chatbox-be70a.firebaseapp.com",
-  projectId: "project-chatbox-be70a",
-  storageBucket: "project-chatbox-be70a.firebasestorage.app",
-  messagingSenderId: "103965665517",
-  appId: "1:103965665517:web:475b1192e2cef86e9844e4",
-  measurementId: "G-4HCDPW8G9C"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  appId: "YOUR_MESSAGING_SENDER_ID",
+  messagingSenderId: "YOUR_APP_ID",
 };
 
 
