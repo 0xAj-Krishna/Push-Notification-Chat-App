@@ -13,8 +13,8 @@ Before you get started, make sure you have the following installed on your machi
 #### Clone the repository:
 
 ```bash
-git clone [your_repository_url]
-cd [your_repository_name]
+git clone https://github.com/0xAj-Krishna/Push-Notification-Chat-App
+cd Push-Notification-Chat-App
 ```
 #### Install project dependencies:
 
